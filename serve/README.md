@@ -36,18 +36,6 @@ Open a different terminal window to utilize the model through the API
 curl -X POST -H "Content-Type:application/json; format=pandas-split" --data '{"columns":["text"],"data":[["Today is a perfect day to practice automation skills"]]}' http://127.0.0.1:5000/invocations
 ```
 
-# Difference between MLflow Projects and MLflow Models
 
-- **Purpose**:
-    - Projects: MLflow Projects are focused on packaging and reproducing machine learning code. They provide a standardized format for organizing code, specifying dependencies, and defining entry points for running machine learning experiments in a consistent and reproducible manner.
-    - Models: MLflow Models, on the other hand, are focused on managing and deploying machine learning models. They provide tools for packaging models in various formats, serving them for inference, and deploying them to different environments or deployment targets.
-
-- **Content**:
-    - Projects: In MLflow Projects, you package and organize your entire machine learning codebase, including data preprocessing, model training, evaluation, and any other necessary steps. Projects can contain multiple scripts, notebooks, or other files needed to run an experiment.
-    - Models: MLflow Models, on the other hand, focus specifically on the machine learning model itself. They package the trained model along with any necessary preprocessing or postprocessing steps, making it ready for serving or deployment.
-    
-- **Lifecycle Stage**:
-    - Projects: MLflow Projects are primarily used during the development and experimentation phase of the machine learning lifecycle. They facilitate collaboration, versioning, and reproducibility of machine learning experiments.
-    - Models: MLflow Models are used during the deployment and production phase of the machine learning lifecycle. They provide tools for packaging, serving, and deploying trained models to production environments.
 
 
